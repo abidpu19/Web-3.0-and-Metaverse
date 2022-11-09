@@ -7,10 +7,16 @@
 
 let arr = ["Iphone", "Laptop", "Electric Kattle"];
 
+for (let i = 0; i <= arr.length; i++) {
+  if (arr.indexOf[i] === undefined) {
+    arr.indexOf[i] = 5 + i;
+  }
+  console.log(arr.indexOf[i]);
+}
+console.log(arr);
+console.log(arr.indexOf("Laptop"));
+
 // Array.prototype.move = function (from, to) {
 //   this.splice(to, 0, this.splice(from, 1)[0]);
 // };
 // arr.move(0, 2);
-console.log(arr);
-console.log(arr.indexOf("Laptop"));
-console.log(arr.splice(4, 1));
