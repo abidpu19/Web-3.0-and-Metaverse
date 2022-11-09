@@ -6,12 +6,10 @@
  */
 let alien_color = "green";
 
-let color_of_alien = "green";
-
 console.log("If the color is " + color_of_alien);
 
-if (color_of_alien == alien_color) {
+if (alien_color == "green") {
 	console.log("Player just earned 5 points");
-} else if (color_of_alien != alien_color) {
+} else {
 	console.log("Player just earned 10 points");
 }

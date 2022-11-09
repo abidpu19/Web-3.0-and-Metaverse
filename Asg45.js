@@ -6,3 +6,28 @@
  *  such as a color or an optional feature. Print the Object that’s returned
  * to make sure all the information was stored correctly.
  */
+
+function vehicle_info(
+	manufacturer,
+	model,
+	color = "black",
+	...optional_feature
+) {
+	// var args = arguments;
+	let arr = [];
+	// for (var a in args) {
+	// 	arr.push(args[a]); //{ artist: artist_name, ablum: album_title, tracks: tracks }
+	// }
+	console.log(`${manufacturer} model ${model} color ${color} `);
+	arr.push({
+		manufacturer: manufacturer,
+		model: model,
+		color: color,
+		...optional_feature,
+	});
+	console.log(arr);
+}
+
+vehicle_info("Toyota", 2022, "Red");
+vehicle_info("Honda", 2021, "Black");
+vehicle_info("Honda", 2021, "Black", "accidental");
